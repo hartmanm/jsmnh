@@ -14,7 +14,10 @@ const uint8_data = await response.text();
 console.warn('undefined content type:',content_type);
 console.log('first 48 received: !',uint8_data.substring(0, 48),'!');
 return uint8_data;
-};
+} catch(error){
+console.error('processing error:', error);
+throw error;
+}
 };
 
 const f_process_line = (line,the_map,line_number,ifs) => {
