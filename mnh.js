@@ -11,7 +11,7 @@ throw new Error('response.statusText: ' + response.statusText);
 }
 const content_type = response.headers.get('Content-Type');
 const uint8_data = await response.text();
-console.warn('undefined content type:',content_type);
+console.log('undefined content type:',content_type);
 console.log('first 48 received: !',uint8_data.substring(0, 48),'!');
 return uint8_data;
 } catch(error){
