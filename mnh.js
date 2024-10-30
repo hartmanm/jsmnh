@@ -95,7 +95,7 @@ var background_colors=[
 '#d4aa5c',
 '#d36f48'
 ]
-let ddiv = document.createElement("div");
+let ddiv = document.createElement("h2");
 let div_generator_base = document.getElementById(div_generator_base_id);
 ddiv.id = "b_"+`${base_div_iterator}`;
 ddiv.style.paddingTop = '30px';
