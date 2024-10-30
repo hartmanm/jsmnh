@@ -3,6 +3,12 @@
 // mnh_license@proton.me
 // https://github.com/hartmanm
 
+const jsmnh_copyright=`
+Copyright (c) 2016-2024 Michael Neill Hartman. All rights reserved.
+mnh_license@proton.me
+https://github.com/hartmanm
+`;
+
 const f_process_remote_data = async (url) => {
 try {
 const response = await fetch(url);
