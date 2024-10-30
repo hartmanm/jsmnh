@@ -95,14 +95,15 @@ var background_colors=[
 '#d4aa5c',
 '#d36f48'
 ]
-let ddiv = document.createElement("h2");
+let ddiv = document.createElement("div");
 let div_generator_base = document.getElementById(div_generator_base_id);
 ddiv.id = "b_"+`${base_div_iterator}`;
-ddiv.style.paddingTop = '30px';
-ddiv.style.paddingBottom = '30px';
+ddiv.style.paddingTop = '20px';
+ddiv.style.paddingBottom = '20px';
 ddiv.style.textAlign = 'center';
 ddiv.style.color = 'white';
 ddiv.style.backgroundColor = background_colors[color_selector];
+ddiv.style.fontSize = '2em';
 div_generator_base.appendChild(ddiv);
 return ddiv.id;
 }
