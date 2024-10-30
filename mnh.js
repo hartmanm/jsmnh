@@ -126,6 +126,7 @@ Copyright (c) 2019 Michael Neill Hartman. All rights reserved.
 mnh_license@proton.me
 https://github.com/hartmanm
 `
+document.addEventListener('DOMContentLoaded',() => {
 var base_div_iterator=1;
 var color_selector=1;
 for(let i=0;i<links.length;i++){
@@ -139,5 +140,6 @@ f_lamda_link(accumulator[0],accumulator[1],accumulator[2],accumulator[3],base_di
 if(accumulator[3]==0){color_selector++;base_div_iterator++;};
 if(color_selector==9){color_selector=0;}
 };
+});
 };
 /* link_page */
