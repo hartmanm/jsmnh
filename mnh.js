@@ -51,7 +51,7 @@ segment_number++;
 });
 };
 
-function f_split_segment(lefths,righths,input_segment,split_on_char){
+const f_split_segment = (lefths,righths,input_segment,split_on_char) => {
 let parts =[]
 if(typeof input_segment === 'string'){
 parts = input_segment.split(split_on_char);
@@ -66,6 +66,7 @@ lefths = parts.slice(0,-1);
 righths = parts.slice(-1);
 }
 
+/*
 const dep_f_process_line = (line,the_map,line_number,ifs) => {
 const tokens = line.split(ifs);
 if(!the_map[line_number]){
@@ -79,3 +80,5 @@ item = item.slice(0, -1);
 the_map[line_number].push(item);
 });
 };
+*/
+
