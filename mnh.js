@@ -103,7 +103,7 @@ ddiv.style.paddingBottom = '20px';
 ddiv.style.textAlign = 'center';
 ddiv.style.color = 'white';
 ddiv.style.backgroundColor = background_colors[color_selector];
-ddiv.style.fontSize = '2em';
+ddiv.style.fontSize = '1.5em';
 div_generator_base.appendChild(ddiv);
 return ddiv.id;
 }
