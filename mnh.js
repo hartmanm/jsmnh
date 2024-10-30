@@ -122,7 +122,7 @@ function execute_z(element,url){window.open(url);}
 let lamdalink = document.getElementById(id);
 lamdalink.addEventListener("click", function(e){let target = e.target || e.srcElement; execute_z(target,url)}, false);
 }
-const f_generate_link_page = () => {
+const f_generate_link_page = (links) => {
 const link_page_copyright=`
 Copyright (c) 2019 Michael Neill Hartman. All rights reserved.
 mnh_license@proton.me
