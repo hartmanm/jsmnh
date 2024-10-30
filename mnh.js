@@ -106,10 +106,9 @@ ddiv.style.backgroundColor = background_colors[color_selector];
 div_generator_base.appendChild(ddiv);
 return ddiv.id;
 }
-const f_lamda_link = (innerhtml,url,id,reuse_last_base,base_div_iterator,color_selector,div_generator_base_id) => {
+const f_lamda_link = (innerhtml,url,id,base_div_iterator,color_selector,div_generator_base_id) => {
 let base_element_basis;
-if(reuse_last_base!=0){base_element_basis="b_"+`${base_div_iterator}`};
-if(reuse_last_base==0){base_element_basis=f_div_generator(base_div_iterator,color_selector,div_generator_base_id);};
+base_element_basis=f_div_generator(base_div_iterator,color_selector,div_generator_base_id);
 console.log('base_element_basis: ',base_element_basis);
 let base_element = document.getElementById(base_element_basis);
 let ddiv = document.createElement("lamda_link");
@@ -126,7 +125,6 @@ Copyright (c) 2019 Michael Neill Hartman. All rights reserved.
 mnh_license@proton.me
 https://github.com/hartmanm
 `
-document.addEventListener('DOMContentLoaded',() => {
 var base_div_iterator=1;
 var color_selector=1;
 for(let i=0;i<links.length;i++){
@@ -136,10 +134,9 @@ links[i].forEach((inner_value) => {
 accumulator[counter]=inner_value.toString();
 counter++;
 });
-f_lamda_link(accumulator[0],accumulator[1],accumulator[2],accumulator[3],base_div_iterator,color_selector,div_generator_base_id);
+f_lamda_link(accumulator[0],accumulator[1],accumulator[2],base_div_iterator,color_selector,div_generator_base_id);
 if(accumulator[3]==0){color_selector++;base_div_iterator++;};
 if(color_selector==9){color_selector=0;}
 };
-});
 };
 /* link_page */
