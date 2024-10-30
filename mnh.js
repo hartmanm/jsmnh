@@ -107,9 +107,7 @@ div_generator_base.appendChild(ddiv);
 return ddiv.id;
 }
 const f_lamda_link = (innerhtml,url,id,base_div_iterator,color_selector,div_generator_base_id) => {
-let base_element_basis;
-base_element_basis=f_div_generator(base_div_iterator,color_selector,div_generator_base_id);
-console.log('base_element_basis: ',base_element_basis);
+let base_element_basis=f_div_generator(base_div_iterator,color_selector,div_generator_base_id);
 let base_element = document.getElementById(base_element_basis);
 let ddiv = document.createElement("lamda_link");
 ddiv.innerHTML = innerhtml;
