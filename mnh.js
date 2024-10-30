@@ -133,7 +133,8 @@ accumulator[counter]=inner_value.toString();
 counter++;
 });
 f_lamda_link(accumulator[0],accumulator[1],accumulator[2],base_div_iterator,color_selector,div_generator_base_id);
-if(accumulator[3]==0){color_selector++;base_div_iterator++;};
+color_selector++;
+base_div_iterator++;
 if(color_selector==9){color_selector=0;}
 };
 };
