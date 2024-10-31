@@ -3,6 +3,8 @@
 // mnh_license@proton.me
 // https://github.com/hartmanm
 
+"use strict";
+
 const jsmnh_copyright=`
 Copyright (c) 2016-2024 Michael Neill Hartman. All rights reserved.
 mnh_license@proton.me
